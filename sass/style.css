@@ -10,6 +10,10 @@ textarea {
   line-height: 1.5;
 }
 
+body {
+  margin: 0;
+}
+
 .site {
   position: relative;
   display: flex;
@@ -404,68 +408,6 @@ textarea {
   .portfolio-item:nth-of-type(3n) {
     margin-right: 0;
   }
-}
-
-/* Testimonials */
-#testimonials {
-  background: #fff;
-}
-#testimonials .content-wrapper {
-  background: #2e2e2e;
-  border-radius: 4px;
-}
-#testimonials .carousel {
-  position: initial;
-  display: flex;
-  flex-direction: column;
-}
-#testimonials .carousel .testimonial-author {
-  font-size: 16px !important;
-  color: rgba(252, 252, 252, 0.4117647059);
-}
-#testimonials .carousel .carousel-inner {
-  overflow: hidden;
-  display: flex;
-  height: 250px;
-  justify-content: center;
-}
-@media (max-width: 650px) {
-  #testimonials .carousel .carousel-inner {
-    height: auto;
-  }
-}
-#testimonials .carousel .carousel-indicators {
-  position: inherit;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  margin: 0;
-  padding-bottom: 2rem;
-  width: 100%;
-}
-#testimonials .carousel .carousel-indicators li {
-  border: 1px solid #bdbdbd;
-  padding: 0 10px;
-}
-#testimonials .carousel .carousel-indicators li:not(:last-of-type) {
-  margin-right: 4px;
-}
-#testimonials .carousel .carousel-indicators .active {
-  background-color: #9cbb8b;
-  padding: 0 10px;
-  border: 1px solid #9cbb8b;
-  height: 10px;
-  margin-bottom: 1px;
-}
-#testimonials .carousel .item {
-  padding: 2rem 2rem 0;
-  color: #ffffff;
-  text-align: center;
-}
-#testimonials .carousel .item p {
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 1.5;
 }
 
 /* Contact form */
