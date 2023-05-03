@@ -140,15 +140,15 @@ body {
   align-items: center;
 }
 #hero .hero-title {
-  background: linear-gradient(to right, #8a2387, #e94057, #f27121);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   width: 90%;
   max-width: 800px;
   text-align: center;
   font-weight: bold;
 }
 #hero .hero-title__primary {
+  background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 35px;
   line-height: 1;
   display: block;
@@ -160,6 +160,7 @@ body {
   }
 }
 #hero .hero-title__secondary {
+  color: #fff;
   line-height: 1.5;
   font-size: 1rem;
   margin: 0;
