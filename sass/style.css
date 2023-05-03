@@ -130,103 +130,6 @@ body {
   }
 }
 
-.mobile-menu {
-  align-items: center;
-  justify-content: flex-end;
-  padding: 8px 16px;
-}
-.mobile-menu__btn {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 35px;
-  height: 30px;
-  cursor: pointer;
-  transition: 0.4s;
-}
-.mobile-menu__icon {
-  display: block;
-  position: relative;
-  background: rgb(255, 255, 255);
-  width: 90%;
-  height: 4px;
-  transition: 0.4s;
-}
-.mobile-menu__icon::after, .mobile-menu__icon::before {
-  content: "";
-  display: block;
-  position: absolute;
-  background: rgb(255, 255, 255);
-  width: 100%;
-  height: 4px;
-  transition: 0.4s;
-}
-.mobile-menu__icon::after {
-  top: 8px;
-}
-.mobile-menu__icon::before {
-  top: -8px;
-}
-.mobile-menu__container {
-  position: fixed;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  top: 46px;
-  left: 0;
-  right: 0;
-  z-index: 999;
-  height: 0;
-  opacity: 1;
-  transition: 0.5s;
-  transition-delay: 0.2s;
-  overflow: hidden;
-}
-.mobile-menu__list {
-  display: flex !important;
-  flex-direction: column;
-  width: 100%;
-  margin: 0;
-  align-self: auto;
-  transition: 0.5s;
-  transition-delay: 0.5s;
-  list-style: none;
-  padding-left: 0;
-}
-.mobile-menu__item {
-  font-size: 26px;
-  padding-bottom: 15px;
-}
-.mobile-menu__link {
-  text-decoration: none;
-}
-.mobile-menu__checkbox {
-  display: none;
-}
-.mobile-menu__checkbox:checked ~ .mobile-menu__nav {
-  opacity: 1;
-  transition-delay: 0s;
-}
-.mobile-menu__checkbox:checked ~ .mobile-menu__container {
-  height: 100%;
-  transition-delay: 0s;
-}
-.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon {
-  background: transparent;
-}
-.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before, .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
-  top: 0;
-}
-.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-
 #hero {
   height: 95vh;
   max-height: 900px;
@@ -240,7 +143,9 @@ body {
   align-items: center;
 }
 #hero .hero-title {
-  color: #fff;
+  background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   width: 90%;
   max-width: 800px;
   text-align: center;
